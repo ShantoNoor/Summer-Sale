@@ -3,28 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./images/tick.svg" type="image/x-icon">
     <title>Summer Sale</title>
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Favicon --> 
+    <link rel="shortcut icon" href="./images/tick.svg" type="image/x-icon">
+
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
     tailwind.config = {
         theme: {
             extend: {
                 colors: {
-                    clifford: '#da373d',
+                    purple1: '#E527B2',
+                },
+                backgroundColor: {
+                    background1: '#F9F6E2',
                 }
             }
         }
     }
     </script>
+    
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-    
+    <!-- banner -->
+    <header class="flex bg-background1 py-20 justify-center items-center gap-7">
+        <div class="text-[#111] text-center">
+            <h2 class="font-medium text-3xl">---SALE FEVER---</h2>
+            <h1 class="text-6xl font-bold mt-11 mb-20">Purchase TK 200 or <br> above & get <span class="text-purple1">20% off</span></h1>
+            <h3 class="font-medium text-2xl"><span>Use Promo Code</span> <button class="btn btn-secondary text-white font-semibold text-2xl">SELL200</button></h3>
+        </div>
+        <img class="" src="./images/summer.png" alt="summer sell picture">
+    </header>
+
     <script src="./scripts/main.js"></script>
 </body>
 </html>
