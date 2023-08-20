@@ -2,6 +2,8 @@
 
 ## [My Repo Link](https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-ShantoNoor)
 
+Click here for the my repo: [https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-ShantoNoor](https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-ShantoNoor)
+
 ## [Private Repo Link](https://classroom.github.com/a/uicCJkDQ)
 
 Click here for the private repo: [https://classroom.github.com/a/uicCJkDQ](https://classroom.github.com/a/uicCJkDQ)
