@@ -1,6 +1,12 @@
 # summer-sale
 
-## [My Repo Link](https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-ShantoNoor)
+## Live Link
+
+Netlify: [https://summer-sale900.netlify.app/](https://summer-sale900.netlify.app/)
+
+Surge: [http://summer-sale900.surge.sh/](http://summer-sale900.surge.sh/)
+
+## [Code Repo Link](https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-ShantoNoor)
 
 Click here for the my repo: [https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-ShantoNoor](https://github.com/Programming-Hero-Web-Course4/b8a5-summer-sale-ShantoNoor)
 
