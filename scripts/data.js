@@ -1,4 +1,9 @@
-porducts_data = [
+let totalPrice = 0
+let disount = 0
+let total = 0
+let isCouponApplied = false
+
+const porducts_data = [
     {
         id: 'category1',
         title: 'Kitchenware',

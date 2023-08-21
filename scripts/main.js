@@ -1,3 +1,5 @@
+setPrices()
+
 for(const category of porducts_data) {
     createAndAddTitle(category.title, 'card-container')
     createAndAddCardContainer(category.id, 'card-container')

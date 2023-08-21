@@ -10,8 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- style.css -->
-    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* applying-font */
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+    
     <!-- Favicon --> 
     <link rel="shortcut icon" href="./images/tick.svg" type="image/x-icon">
 
@@ -56,27 +61,23 @@
                 <h6 class="color-[#111] text-2xl font-medium mb-4">Have coupon?</h6>
                 <div class="form-control">
                     <div class="input-group rounded-lg">
-                      <input type="text" placeholder="Coupon code" class="input w-[70%] border border-[#11111122] " />
-                      <button class="btn btn-secondary btn-square text-white bg-purple1 w-[30%] border border-purple1 duration-300 hover:-skew-y-3">   
+                      <input id="coupon-text" type="text" placeholder="Coupon code" class="input w-[70%] border border-[#11111122] " />
+                      <button id="coupon-btn" class="btn btn-secondary btn-square text-white bg-purple1 w-[30%] border border-purple1 hover:-translate-y-1 duration-300 hover:shadow-lg" disabled onclick="handleCoupon()">   
                         Apply  
                       </button>
                     </div>
                 </div>
             </div>
             <div class="p-6 bg-white rounded-lg mt-6">
-                <ol class="list-decimal list-inside">
-                    <li class="py-1 font-medium">Home Cooker</li>
-                    <li class="py-1 font-medium">Sports cates</li>
-                    <li class="py-1 font-medium">Home Cooker</li>
-                </ol>
+                <ol id="cart" class="list-decimal list-inside"></ol>
                 <hr class="my-3">
-                <p class="py-1 font-medium">Total price: <span class="text-[#11111188]">245.94TK</span></p>
-                <p class="py-1 font-medium">Disount: <span class="text-[#11111188]">25.94TK</span></p>
-                <p class="py-1 font-medium">Total: <span class="text-[#11111188]">230.00TK</span></p>
+                <p class="py-1 font-medium">Total price: <span id="totalPrice" class="text-[#11111188]"></span></p>
+                <p class="py-1 font-medium">Disount: <span id="discount" class="text-[#11111188]"></span></p>
+                <p class="py-1 font-medium">Total: <span id="total" class="text-[#11111188]"></span></p>
                 <hr class="my-6">
             </div>
             <div class="px-6 -mt-6">
-                <button class="btn btn-secondary text-white bg-purple1 w-full hover:-translate-y-1 duration-300 hover:shadow-lg">Make Purchase</button>
+                <button id="purchase-btn" class="btn btn-secondary text-white bg-purple1 w-full hover:-translate-y-1 duration-300 hover:shadow-lg" disabled>Make Purchase</button>
             </div>
         </section>
     </main>
