@@ -57,5 +57,32 @@ const porducts_data = [
                 image: './images/prod6.png'
             }
         ]
+    },
+    {
+        id: 'category3',
+        title: 'Furniture',
+        items: [
+            {
+                id: 'product31',
+                name: 'Single Relax Chair',
+                rating: 4,
+                price: 185.00,
+                image: './images/prod7.png'
+            },
+            {
+                id: 'product32',
+                name: 'Children play',
+                rating: 5,
+                price: 299.00,
+                image: './images/prod8.png'
+            },
+            {
+                id: 'product33',
+                name: 'Flexible Sofa',
+                rating: 5,
+                price: 339.00,
+                image: './images/prod9.png'
+            }
+        ]
     }
 ]
