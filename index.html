@@ -48,7 +48,7 @@
             <h1 class="text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold m-5 md:mt-7 md:mb-16 xl:mt-11 xl:mb-20">Purchase TK 200 or <br> above & get <span class="text-purple1">20% off</span></h1>
             <h3 class="font-medium md:text-lg lg:text-xl xl:text-2xl">
                 <span>Use Promo Code</span> 
-                <button class="btn btn-secondary bg-purple1 btn-sm md:btn-md text-white font-semibold md:text-lg lg:text-xl xl:text-2xl hover:scale-110 duration-300">SELL200</button>
+                <a href="#coupon-section"><button class="btn btn-secondary bg-purple1 btn-sm md:btn-md text-white font-semibold md:text-lg lg:text-xl xl:text-2xl hover:scale-110 duration-300" onclick="document.querySelector('#coupon-text').value = 'SELL200'; coupon_modal.showModal()">SELL200</button></a>
             </h3>
         </div>
         <img class="max-h-[375px] md:max-h-none md:w-1/2 xl:w-auto" src="./images/summer.png" alt="summer sell picture">
@@ -56,15 +56,15 @@
 
     <main class="container flex flex-col lg:flex-row mx-auto gap-6 px-3 pb-32 lg:pb-40">
         <section id="card-container" class="w-full lg:w-[75%] lg:mt-[63px]"></section>
-        <section class="w-full lg:w-[25%] lg:mt-[192px]">
+        <section id="coupon-section" class="w-full lg:w-[25%] lg:mt-[192px]">
             <div class="p-6 bg-white rounded-lg">
                 <h6 class="color-[#111] text-2xl font-medium mb-4">Have coupon?</h6>
                 <div class="form-control">
                     <div class="input-group rounded-lg">
-                      <input id="coupon-text" type="text" placeholder="Coupon code" class="input w-[70%] border border-[#11111122] " />
-                      <button id="coupon-btn" class="btn btn-secondary btn-square text-white bg-purple1 w-[30%] border border-purple1 hover:-translate-y-1 duration-300 hover:shadow-lg" disabled onclick="handleCoupon()">   
-                        Apply  
-                      </button>
+                        <input id="coupon-text" type="text" placeholder="Coupon code" class="input w-[70%] border border-[#11111122] " />
+                        <button id="coupon-btn" class="btn btn-secondary btn-square text-white bg-purple1 w-[30%] border border-purple1 hover:-translate-y-1 duration-300 hover:shadow-lg" disabled onclick="handleCoupon()">   
+                            Apply  
+                        </button>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
             </div>
         </section>
 
-        <!-- modal -->
+        <!-- modals -->
         <section>
             <dialog id="success_modal" class="modal text-center">
                 <form method="dialog" class="modal-box w-auto max-w-none md:py-16 md:px-20">
@@ -90,6 +90,15 @@
                     <p class="text-lg md:text-xl font-normal text-[#11111188] mt-1 md:mt-4">Your Purchase the product</p>
                     <button class="btn btn-sm md:btn-lg w-auto md:w-[40%] btn-secondary text-xl text-white bg-purple1 hover:-translate-y-1 duration-300 hover:shadow-lg mt-1 md:mt-10" onclick="window.location.href='/'">Go Home</button>
                 </form>
+            </dialog>
+
+            <dialog id="coupon_modal" class="modal">
+            <form method="dialog" class="modal-box">
+                <h3 class="font-bold text-lg">Coupon added in input field!!!</h3>
+            </form>
+            <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+            </form>
             </dialog>
         </section>
     </main>
