@@ -3,14 +3,18 @@ function setPrices() {
     const discountEl = document.querySelector('#discount')
     const totalEl = document.querySelector('#total')
 
+    const purchaseBtn = document.querySelector('#purchase-btn')
     if(totalPrice > 0) {
-        const purchaseBtn = document.querySelector('#purchase-btn')
         purchaseBtn.removeAttribute('disabled')
+    } else {
+        purchaseBtn.setAttribute('disabled', true)
     }
 
+    const couponBtn = document.querySelector('#coupon-btn')
     if(totalPrice >= 200) {
-        const couponBtn = document.querySelector('#coupon-btn')
         couponBtn.removeAttribute('disabled')
+    } else {
+        couponBtn.setAttribute('disabled', true)
     }
 
     if(isCouponApplied) {
@@ -55,6 +59,19 @@ function handleCoupon() {
     } else {
         alert('Invalid Coupon Code. Please, Try again whit a valid Coupon Code.')
     }
+}
+
+function resetValues() {
+    totalPrice = 0;
+    disount = 0;
+    price = 0;
+    isCouponApplied = false
+
+    setPrices()
+    document.getElementById('cart').innerHTML = ''
+    document.querySelector('#coupon-text').value = ''
+
+
 }
 
 function createElementWithClassNames(elementTagName, classNames) {
